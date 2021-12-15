@@ -40,6 +40,15 @@ function countTimer(){
       }
     }
   }
+  --totalSeconds;
+  printTime()
+}
+
+function printTime(){
+  days.innerHTML = timeLeft.d;
+  hours.innerHTML = timeLeft.h;
+  minutes.innerHTML = timeLeft.m;
+  seconds.innerHTML = timeLeft.s;
 }
 
 function setTimeLeft(){

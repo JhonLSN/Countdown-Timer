@@ -12,7 +12,7 @@ let timeLeft = {
 
 let totalSeconds;
 
-function init() {
+function inits() {
   totalSeconds = Math.floor((new Date('01.01.2022') - new Date()) / 1000); 
   setTimeLeft();
   let interval = setInterval(() =>{

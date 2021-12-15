@@ -16,7 +16,7 @@ function init() {
   totalSeconds = Math.floor((new Date('01.01.2022') - new Date()) / 1000); 
   setTimeLeft();
   let interval = setInterval(() =>{
-    if(totaleconds < 0){
+    if(totalSeconds < 0){
       clearInterval(interval)
     }
     countTimer();

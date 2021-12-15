@@ -14,17 +14,31 @@ let totalSeconds;
 
 function init() {
   totalSeconds = Math.floor((new Date('01.01.2022') - new Date()) / 1000); 
+  setTimeLeft();
   let interval = setInterval(() =>{
     if(totalSeconds < 0){
       clearInterval(interval)
     }
-    countTimer();  
+    countTimer();
+    console.log(timeLeft);  
   }, 1000);
 }
 
 function countTimer(){
   if(totalSeconds > 0){
-
+    --timeLeft.s;
+    if(timeLeft.m >= 0 && timeLeft.s < 0){
+      timeLeft.s = 59
+      --timeLeft.m;
+      if(timeLeft.h >= 0 && timeLeft.m < 0){
+        timeLeft.m = 59
+        --timeLeft.h;
+        if(timeLeft.d >= 0 && timeLeft.h < 0){
+          timeLeft.h = 23;
+          --timeLeft.d;
+        }
+      }
+    }
   }
 }
 

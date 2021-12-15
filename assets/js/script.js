@@ -21,7 +21,7 @@ function init() {
     }
     countTimer();
     console.log(timeLeft);  
-  }, 10);
+  }, 100);
 }
 
 function countTimer(){

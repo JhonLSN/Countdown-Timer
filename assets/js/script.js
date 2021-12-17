@@ -53,7 +53,27 @@ function printTime(){
   animateFlip(seconds, timeLeft.s);
 }
 
-function animateFlip(element, value)
+function animateFlip(element, value){
+  element.querySelector('.top-back span').innerHTML = value;  
+  element.querySelector('.bottom-back span').innerHTML = value;  
+
+  gsap.to(element.querySelector('.top'), 0.7, {
+    rotationX: '-100deg',
+    transformPerspective: 300,
+    ease: Quart.easeOut,
+    onComplete: () => {
+      element.querySelector('.top').innerHTML = value;
+      element.querySelector('.bottom').innerHTML = value;
+    }
+  });
+
+  gsap.to(element.querySelector('.top-back'), 0.7, {
+    rotationX: '0',
+    transformPerspective: 300,
+    ease: Quart.easeOut,
+    clearProps: 'all'
+  });
+}
 
 function setTimeLeft(){
   timeLeft.d = Math.floor(totalSeconds / (60 * 60 * 24))

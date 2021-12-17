@@ -96,12 +96,24 @@ main .top {
           transform: perspective(200px);
 }
 
+main .time-elem .top::after,
+main .time-elem .bottom-back::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #000;
+}
+
 main .bottom {
   z-index: 1;
 }
 
 main .bottom::before {
-  content: '';
+  content: "";
 }
 
 main .bottom-back {
@@ -117,6 +129,31 @@ main .bottom-back span {
   left: 0;
   right: 0;
   bottom: 0;
+  margin: auto;
+}
+
+main .top,
+main .top-back {
+  height: 50%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+main .top-back {
+  z-index: 4;
+  bottom: 0;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-transform: perspective(200px) rotateX(180deg);
+          transform: perspective(200px) rotateX(180deg);
+}
+
+main .top-back span {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
   margin: auto;
 }
 /*# sourceMappingURL=bundle.css.map */

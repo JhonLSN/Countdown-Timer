@@ -1,11 +1,16 @@
 main {
   height: 100vh;
-  background: url(../img/pattern-hills.svg);
+  background: url(../img/pattern-hills.svg) no-repeat 0 bottom;
   background-size: contain;
-  background-repeat: no-repeat;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
   padding-top: 20vh;
+
+  h1 {
+    margin-bottom: 100px;
+    color: #fff;
+    text-transform: uppercase;
+  }
 }

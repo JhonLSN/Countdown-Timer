@@ -14,9 +14,8 @@ body {
 
 main {
   height: 100vh;
-  background: url(../img/pattern-hills.svg);
+  background: url(../img/pattern-hills.svg) no-repeat 0 bottom;
   background-size: contain;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,5 +30,11 @@ main {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-top: 20vh;
+}
+
+main h1 {
+  margin-bottom: 100px;
+  color: #fff;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=bundle.css.map */

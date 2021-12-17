@@ -60,4 +60,24 @@ main .time-elem {
   font-size: 5em;
   overflow: hidden;
 }
+
+main .time-elem::before,
+main .time-elem::after {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  top: calc(50% - 5px);
+  background: #000;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+main .time-elem::before {
+  left: -5px;
+}
+
+main .time-elem::after {
+  right: -5px;
+}
 /*# sourceMappingURL=bundle.css.map */

@@ -31,4 +31,24 @@ main {
     font-size: 5em;
     overflow: hidden;
   }
+
+  .time-elem::before,
+  .time-elem::after {
+    content: "";
+    position: absolute;
+    z-index: 6;
+    top: calc(50% - 5px);
+    background: #000;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+  .time-elem::before {
+    left: -5px;
+  }
+
+  .time-elem::after {
+    right: -5px;
+  }
 }

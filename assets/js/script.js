@@ -13,27 +13,26 @@ let timeLeft = {
 let totalSeconds;
 
 function init() {
-  totalSeconds = Math.floor((new Date('01.01.2022') - new Date()) / 1000); 
+  totalSeconds = Math.floor((new Date('01/01/2022') - new Date()) / 1000);
   setTimeLeft();
-  let interval = setInterval(() =>{
-    if(totalSeconds < 0){
-      clearInterval(interval)
+  let interval = setInterval(() => {
+    if (totalSeconds < 0) {
+      clearInterval(interval);
     }
-    countTimer();
-    console.log(timeLeft);  
+    countTime();
   }, 1000);
 }
 
-function countTimer(){
-  if(totalSeconds > 0){
+function countTime() {
+  if (totalSeconds > 0) {
     --timeLeft.s;
-    if(timeLeft.m >= 0 && timeLeft.s < 0){
-      timeLeft.s = 59
+    if (timeLeft.m >= 0 && timeLeft.s < 0) {
+      timeLeft.s = 59;
       --timeLeft.m;
-      if(timeLeft.h >= 0 && timeLeft.m < 0){
-        timeLeft.m = 59
+      if (timeLeft.h >= 0 && timeLeft.m < 0) {
+        timeLeft.m = 59;
         --timeLeft.h;
-        if(timeLeft.d >= 0 && timeLeft.h < 0){
+        if (timeLeft.d >= 0 && timeLeft.h < 0) {
           timeLeft.h = 23;
           --timeLeft.d;
         }
@@ -41,53 +40,53 @@ function countTimer(){
     }
   }
   --totalSeconds;
-  printTime()
+  printTime();
 }
 
-function printTime(){
-  // days.innerHTML = timeLeft.d;
-  // hours.innerHTML = timeLeft.h;
-  // minutes.innerHTML = timeLeft.m;
-  // seconds.innerHTML = timeLeft.s;
-
+function printTime() {
   animateFlip(days, timeLeft.d);
-  animateFlip(hours , timeLeft.h);
+  animateFlip(hours, timeLeft.h);
   animateFlip(minutes, timeLeft.m);
   animateFlip(seconds, timeLeft.s);
 }
 
-function animateFlip(element, value){
-  const valueInDom = element.querySelector('.bottom-back').innerHTML;
+function animateFlip(element, value) {
+  const valueInDom = element.querySelector('.bottom-back').innerText;
   const currentValue = value < 10 ? '0' + value : '' + value;
 
-  if(valueInDom ===currentValue) return;
+  if (valueInDom === currentValue) return;
 
-  element.querySelector('.top-back span').innerHTML = currentValue;  
-  element.querySelector('.bottom-back span').innerHTML = currentValue;  
+  element.querySelector('.top-back span').innerText = currentValue;
+  element.querySelector('.bottom-back span').innerText = currentValue;
+
 
   gsap.to(element.querySelector('.top'), 0.7, {
-    rotationX: '-100deg',
+    rotationX: '-180deg',
     transformPerspective: 300,
     ease: Quart.easeOut,
-    onComplete: () => {
-      element.querySelector('.top').innerHTML = currentValue;
-      element.querySelector('.bottom').innerHTML = currentValue;
+    onComplete: function () {
+      element.querySelector('.top').innerText = currentValue;
+      element.querySelector('.bottom').innerText = currentValue;
+      gsap.set(element.querySelector('.top'), { rotationX: 0 });
     }
   });
 
   gsap.to(element.querySelector('.top-back'), 0.7, {
-    rotationX: '0',
+    rotationX: 0,
     transformPerspective: 300,
     ease: Quart.easeOut,
     clearProps: 'all'
   });
+
 }
 
-function setTimeLeft(){
-  timeLeft.d = Math.floor(totalSeconds / (60 * 60 * 24))
-  timeLeft.h = Math.floor(totalSeconds / (60 * 60) % 24)
-  timeLeft.m = Math.floor(totalSeconds / (60) % 60)
-  timeLeft.s = Math.floor(totalSeconds % 60)
+
+
+function setTimeLeft() {
+  timeLeft.d = Math.floor(totalSeconds / (60 * 60 * 24));
+  timeLeft.h = Math.floor(totalSeconds / (60 * 60) % 24);
+  timeLeft.m = Math.floor(totalSeconds / (60) % 60);
+  timeLeft.s = Math.floor(totalSeconds % 60);
 }
 
 init();

@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,AAAA,CAAC,CAAA;EAAC,MAAM,EAAE,CAAC;EAAE,OAAO,EAAE,CAAC;EAAE,UAAU,EAAE,UAAU;CAAG;;AAElD,AAAA,IAAI,CAAA;EACF,WAAW,EAAE,0BAA0B;EACvC,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,wBAAwB,EAAE,OAAkB;CACzD",
     "sources": [
         "bundle.scss",
-        "main.scss",
+        "reset.scss",
         "main.scss"
     ],
     "names": [],

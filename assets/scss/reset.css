@@ -9,5 +9,6 @@ body {
   font-family: 'Red Hat Text', sans-serif;
   font-size: 14px;
   height: 100vh;
+  background: url(../img/bg-stars.svg), #1b1924;
 }
 /*# sourceMappingURL=reset.css.map */

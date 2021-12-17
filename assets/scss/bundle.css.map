@@ -3,7 +3,8 @@
     "mappings": "",
     "sources": [
         "bundle.scss",
-        "header.scss"
+        "main.scss",
+        "main.scss"
     ],
     "names": [],
     "file": "bundle.css"

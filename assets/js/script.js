@@ -45,11 +45,15 @@ function countTimer(){
 }
 
 function printTime(){
-  days.innerHTML = timeLeft.d;
-  hours.innerHTML = timeLeft.h;
-  minutes.innerHTML = timeLeft.m;
-  seconds.innerHTML = timeLeft.s;
+  // days.innerHTML = timeLeft.d;
+  // hours.innerHTML = timeLeft.h;
+  // minutes.innerHTML = timeLeft.m;
+  // seconds.innerHTML = timeLeft.s;
+
+  animateFlip(seconds, timeLeft.s);
 }
+
+function animateFlip(element, value)
 
 function setTimeLeft(){
   timeLeft.d = Math.floor(totalSeconds / (60 * 60 * 24))

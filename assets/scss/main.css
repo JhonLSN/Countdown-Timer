@@ -66,4 +66,8 @@ main .time-elem::before {
 main .time-elem::after {
   right: -5px;
 }
+
+main .time-elem > span {
+  position: absolute;
+}
 /*# sourceMappingURL=main.css.map */

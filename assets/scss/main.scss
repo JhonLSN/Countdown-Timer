@@ -51,4 +51,9 @@ main {
   .time-elem::after {
     right: -5px;
   }
+
+  // Animation Flip
+  .time-elem > span{
+    position: absolute;
+  }
 }

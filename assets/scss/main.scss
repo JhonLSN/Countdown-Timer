@@ -84,6 +84,13 @@ main {
 
   .bottom::before {
     content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 50%;
+    background-color: hsl(235, 20%, 25%);
   }
 
   .bottom-back {

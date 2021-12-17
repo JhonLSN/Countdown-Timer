@@ -50,20 +50,28 @@ function printTime(){
   // minutes.innerHTML = timeLeft.m;
   // seconds.innerHTML = timeLeft.s;
 
+  animateFlip(days, timeLeft.d);
+  animateFlip(hours , timeLeft.h);
+  animateFlip(minutes, timeLeft.m);
   animateFlip(seconds, timeLeft.s);
 }
 
 function animateFlip(element, value){
-  element.querySelector('.top-back span').innerHTML = value;  
-  element.querySelector('.bottom-back span').innerHTML = value;  
+  const valueInDom = element.querySelector('.bottom-back').innerHTML;
+  const currentValue = value < 10 ? '0' + value : '' + value;
+
+  if(valueInDom ===currentValue) return;
+
+  element.querySelector('.top-back span').innerHTML = currentValue;  
+  element.querySelector('.bottom-back span').innerHTML = currentValue;  
 
   gsap.to(element.querySelector('.top'), 0.7, {
     rotationX: '-100deg',
     transformPerspective: 300,
     ease: Quart.easeOut,
     onComplete: () => {
-      element.querySelector('.top').innerHTML = value;
-      element.querySelector('.bottom').innerHTML = value;
+      element.querySelector('.top').innerHTML = currentValue;
+      element.querySelector('.bottom').innerHTML = currentValue;
     }
   });
 

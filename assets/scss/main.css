@@ -37,15 +37,19 @@ main .countdown {
 
 main .time-elem {
   position: relative;
-  margin-right: 20px;
   color: #fb6087;
-  height: 80px;
-  width: 100px;
+  position: relative;
+  height: 140px;
+  width: 150px;
   background-color: #33354d;
-  border-radius: 10px;
+  border-radius: 8px;
   text-align: center;
-  font-size: 5em;
+  font-size: 5.5em;
   overflow: hidden;
+  margin-bottom: 27px;
+  line-height: 138px;
+  -webkit-box-shadow: 0px 8px 0px 0px #16151d;
+          box-shadow: 0px 8px 0px 0px #16151d;
 }
 
 main .time-elem::before,

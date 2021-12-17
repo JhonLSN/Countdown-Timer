@@ -13,4 +13,12 @@ main {
     color: #fff;
     text-transform: uppercase;
   }
+
+  .countdown {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .time-elem {
+  }
 }

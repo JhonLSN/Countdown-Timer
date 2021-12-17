@@ -6,7 +6,8 @@ main {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 20vh;
+  padding-top: 15vh;
+  position: relative;
 
   h1 {
     margin-bottom: 100px;
@@ -34,11 +35,11 @@ main {
 
   .time-elem::before,
   .time-elem::after {
-    content: "";
+    content: '';
     position: absolute;
     z-index: 6;
     top: calc(50% - 5px);
-    background: #000;
+    background: hsl(240, 12%, 16%);
     border-radius: 50%;
     width: 10px;
     height: 10px;
@@ -56,7 +57,7 @@ main {
   .time-elem > span {
     position: absolute;
     left: 0;
-    height: 0;
+    right: 0;
   }
 
   .top {

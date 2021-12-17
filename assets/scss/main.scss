@@ -65,4 +65,28 @@ main {
     transform-origin: 50% 100%;
     transform: perspective(200px);
   }
+
+  .bottom {
+    z-index: 1;
+  }
+
+  .bottom::before {
+    content: '';
+  }
+
+  .bottom-back {
+    z-index: 2;
+    top: 0;
+    height: 50%;
+    overflow: hidden;
+  }
+
+  .bottom-back span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
 }

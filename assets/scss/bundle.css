@@ -80,4 +80,43 @@ main .time-elem::before {
 main .time-elem::after {
   right: -5px;
 }
+
+main .time-elem > span {
+  position: absolute;
+  left: 0;
+  height: 0;
+}
+
+main .top {
+  z-index: 3;
+  background-color: #2a2a41;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: perspective(200px);
+          transform: perspective(200px);
+}
+
+main .bottom {
+  z-index: 1;
+}
+
+main .bottom::before {
+  content: '';
+}
+
+main .bottom-back {
+  z-index: 2;
+  top: 0;
+  height: 50%;
+  overflow: hidden;
+}
+
+main .bottom-back span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
 /*# sourceMappingURL=bundle.css.map */

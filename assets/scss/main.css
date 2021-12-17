@@ -33,4 +33,17 @@ main .countdown {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
 }
+
+main .time-elem {
+  position: relative;
+  margin-right: 20px;
+  color: #fb6087;
+  height: 80px;
+  width: 100px;
+  background-color: #2e3152;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 5em;
+  overflow: hidden;
+}
 /*# sourceMappingURL=main.css.map */

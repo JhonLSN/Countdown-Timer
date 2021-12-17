@@ -20,5 +20,15 @@ main {
   }
 
   .time-elem {
+    position: relative;
+    margin-right: 20px;
+    color: hsl(345, 95%, 68%);
+    height: 80px;
+    width: 100px;
+    background-color: hsl(235, 28%, 25%);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 5em;
+    overflow: hidden;
   }
 }

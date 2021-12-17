@@ -37,4 +37,27 @@ main h1 {
   color: #fff;
   text-transform: uppercase;
 }
+
+main .countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+main .time-elem {
+  position: relative;
+  margin-right: 20px;
+  color: #fb6087;
+  height: 80px;
+  width: 100px;
+  background-color: #2e3152;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 5em;
+  overflow: hidden;
+}
 /*# sourceMappingURL=bundle.css.map */

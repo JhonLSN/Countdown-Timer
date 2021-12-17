@@ -53,7 +53,16 @@ main {
   }
 
   // Animation Flip
-  .time-elem > span{
+  .time-elem > span {
     position: absolute;
+    left: 0;
+    height: 0;
+  }
+
+  .top {
+    z-index: 3;
+    background-color: hsl(240, 21%, 21%);
+    transform-origin: 50% 100%;
+    transform: perspective(200px);
   }
 }

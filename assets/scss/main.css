@@ -69,5 +69,16 @@ main .time-elem::after {
 
 main .time-elem > span {
   position: absolute;
+  left: 0;
+  height: 0;
+}
+
+main .top {
+  z-index: 3;
+  background-color: #2a2a41;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: perspective(200px);
+          transform: perspective(200px);
 }
 /*# sourceMappingURL=main.css.map */

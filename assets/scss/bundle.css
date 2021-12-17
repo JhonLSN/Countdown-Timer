@@ -55,7 +55,7 @@ main .time-elem {
   color: #fb6087;
   height: 80px;
   width: 100px;
-  background-color: #2e3152;
+  background-color: #33354d;
   border-radius: 10px;
   text-align: center;
   font-size: 5em;
@@ -68,7 +68,7 @@ main .time-elem::after {
   position: absolute;
   z-index: 6;
   top: calc(50% - 5px);
-  background: #24242e;
+  background: #000;
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -129,6 +129,7 @@ main .bottom-back {
   top: 0;
   height: 50%;
   overflow: hidden;
+  background-color: #33354d;
 }
 
 main .bottom-back span {
@@ -153,6 +154,7 @@ main .top-back {
   bottom: 0;
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
+  background-color: #33354d;
   -webkit-transform: perspective(200px) rotateX(180deg);
           transform: perspective(200px) rotateX(180deg);
 }

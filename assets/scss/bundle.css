@@ -170,8 +170,12 @@ main .top-back span {
 }
 
 @media screen and (max-width: 700px) {
+  main {
+    padding-top: 2vh;
+  }
   main h1 {
     text-align: center;
+    margin-bottom: 40px;
   }
   main .countdown {
     display: -webkit-box;
@@ -185,13 +189,14 @@ main .top-back span {
   main .time-elem {
     position: relative;
     color: #fb6087;
-    margin-right: 20px;
-    height: 80px;
-    width: 100px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 120px;
     background-color: #33354d;
     border-radius: 10px;
     text-align: center;
-    font-size: 4.3em;
+    font-size: 5.3em;
     overflow: hidden;
     -webkit-box-shadow: 0px 8px 0px 0px #16151d;
             box-shadow: 0px 8px 0px 0px #16151d;

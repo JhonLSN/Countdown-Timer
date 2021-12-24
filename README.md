@@ -8,7 +8,7 @@
 <p>
 
 <h1 align="center" display="flex">
-  <img src="https://user-images.githubusercontent.com/80855598/147369404-a8fb189e-fa54-41de-9ab5-e29b0e392b2c.png" width="80%" alt="Splitter" title="Splitter">
+  <img src="https://user-images.githubusercontent.com/80855598/147369404-a8fb189e-fa54-41de-9ab5-e29b0e392b2c.png" width="80%" alt="Countidown" title="Countidown">
 </h1>
 
 ## :book: Sobre
@@ -28,4 +28,4 @@ Este projeto foi feito com as seguintes tecnologias:
 - JavaScript 
 - SASS
 
-Acesse o projeto [Clicando Aqui](https://jhonlsn.github.io/Splitter/) 
+Acesse o projeto [Clicando Aqui](https://jhonlsn.github.io/Countidown/) 

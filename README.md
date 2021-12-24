@@ -28,4 +28,4 @@ Este projeto foi feito com as seguintes tecnologias:
 - JavaScript 
 - SASS
 
-Acesse o projeto [Clicando Aqui](https://jhonlsn.github.io/Countidown/) 
+Acesse o projeto [Clicando Aqui](https://jhonlsn.github.io/Countdown-Timer/) 

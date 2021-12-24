@@ -19,7 +19,7 @@ Ela foi criada do zero, além dos códigos que foram feitos por mim.
 O projeto foi criado com o intuito de facilitar a visualização do tempo restante para o dia selecionado.
 
 Nela contêm o recurso de: 
-- Definir *(por meio da linha de comando)* data para contagem regressiva.
+- Definir *(por meio da linha de comando)* uma data para contagem regressiva.
 
 ## :hammer: Tecnologias
 Este projeto foi feito com as seguintes tecnologias:

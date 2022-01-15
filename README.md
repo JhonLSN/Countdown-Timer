@@ -14,7 +14,7 @@
 ## :book: Sobre
 Este repositório contêm a aplicação Cronômetro.
 
-A aplicação é um Web Site que faz a contagem deo tempo que falta para determinado dia/horário.
+A aplicação é um Web Site que faz a contagem do tempo que falta para determinado dia/horário.
 Ela foi criada do zero, além dos códigos que foram feitos por mim.
 O projeto foi criado com o intuito de facilitar a visualização do tempo restante para o dia selecionado.
 
